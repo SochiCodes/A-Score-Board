@@ -186,6 +186,7 @@ thead tr td{
 }
 .card-row .card:hover{
   border: 2px solid rgba(79, 79, 238, 0.5);
+  background-color: var(--tdHoverColor);
 }
 .card .profile {
   display: flex;
