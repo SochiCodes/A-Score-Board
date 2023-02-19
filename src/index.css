@@ -12,6 +12,7 @@
   --tdHoverColor:#f9feff;
   --blueTouch: #1E00FF
 }
+
 body {
   background-color: var(--body);
   font-family: poppins, sans-serif;
@@ -117,8 +118,11 @@ section.filter-section{
 .grid-view
 {
   width: 80%;
-  height: 300px;
   margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
   /* Table styling */

@@ -4,25 +4,25 @@ import { useState } from 'react'
 import { InternData } from './InternData'
 
 export default function ListContent() {
-    const [list] = useState(InternData)
-    const sorted = [...list].sort((a,b)=>{return b.powerRanking - a.powerRanking})
+    const [data] = useState(InternData)
+    const sorted = [...data].sort((a,b)=>{return b.powerRanking - a.powerRanking})
   return (
     
     <>
         {
-            sorted.map((list, index)=> (
+            sorted.map((data, index)=> (
               <tbody key={index}>
                 <tr>
-                  <td>{list.no}</td>
+                  <td>{data.no}</td>
                   <td>
                     <div className='namePic'>
-                      <img src={list.avatar} className='intern-avatar' alt="Onah Sochima"/> <span>{list.name}</span>
+                      <img src={data.avatar} className='intern-avatar' alt="Onah Sochima"/> <span>{data.name}</span>
                     </div>
                   </td>
-                  <td>{list.attendance}</td>
-                  <td>{list.bonus}</td>
-                  <td className='striked'>{list.strike}</td>
-                  <td>{list.powerRanking}</td>
+                  <td>{data.attendance}</td>
+                  <td>{data.bonus}</td>
+                  <td className='striked'>{data.strike}</td>
+                  <td>{data.powerRanking}</td>
                 </tr>
               </tbody>
             ))
