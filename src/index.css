@@ -1,0 +1,240 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+:root{
+  --body: #F5F9FA;
+  --white: #ffffff;
+  --buttonBg: #E9EFF2;
+  --textFaint: #c1cfd5;
+  --tdColor: #122943;
+  --tdHoverColor:#f9feff;
+  --blueTouch: #1E00FF
+}
+body {
+  background-color: var(--body);
+  font-family: poppins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: poppins,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navigation section */
+
+.nav{
+  width: 100%;
+  background-color: var(--white);
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.06);
+  position: fixed;
+  top: 0;
+}
+.nav button{
+  padding: 5px 10px;
+}
+.nav .profileMenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.nav .profileMenu .avatar{
+  border-radius: 50%;
+}
+
+/* Filter section */
+section.filter-section{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.info-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.info-title p{
+  font-weight: 500;
+}
+.info-title .date{
+  color: var(--textFaint);
+  font-weight: 200;
+  font-size: 12px;
+}
+.view-wrapper,
+.sort-wrapper{
+  width: 30px;
+  height: 30px;
+  background-color: var(--buttonBg);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.view-wrapper:hover,
+.sort-wrapper:hover{
+  background-color: rgb(10, 10, 231, .15);
+}
+.filter-section .filter-icon{
+  width: 20px;
+  height: 20px;
+}
+
+.view-container{
+  width: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-container:first-child{
+  margin-right: 5px;
+}
+/* Filter section ends */
+
+/* List view */
+.list-view,
+.grid-view
+{
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+  /* Table styling */
+table {
+  width: 100%;
+  background-color: var(--white);
+  border-collapse: collapse
+}
+table .intern-avatar {
+  width: 25px;
+  border-radius: 50%;
+}
+table td {
+  padding: 15px 20px;
+  color: var(--tdColor);
+}
+.namePic{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+tbody tr, thead tr{
+  box-shadow: 0 1px var(--body);
+}
+tbody tr:hover{
+  border-left: 5px solid var(--touchTouch);
+  background-color: var(--tdHoverColor);
+}
+thead tr td{
+  font-size: 14px;
+  color: var(--textFaint);
+  font-weight: 500;
+}
+
+/* Grid section starts */
+.card-row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-row .card{
+  flex: 0 0 calc(33.3% - 20px);
+  background-color: var(--white);
+  max-width: 0 0 calc(33.3% - 20px);
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border: 2px solid #eeeff2;
+  transition: .5s;
+  font-size: 14px;
+}
+.card-row .card:hover{
+  border: 2px solid rgb(10, 10, 231, .15);
+}
+.card .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  color: var(--tdColor);
+  font-weight: 600;
+}
+
+.grid-view .intern-avatar{
+  width: 80px;
+  border-radius: 50%;
+}
+.card .stat{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 400;
+}
+.card .details h1{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(18, 18, 52, 0.5);
+}
+.card .greyed{
+  color: var(--textFaint);
+  font-size: 14px;
+  margin-right: 5px;
+  font-weight: 400;
+  font-family: Raleway, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.striked{
+  color: #FF3B3B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
