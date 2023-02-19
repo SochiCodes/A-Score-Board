@@ -22,7 +22,7 @@ export default function GridView() {
                     </div>
                     
                     <div className='details'>
-                        <h1>Onah Sochima </h1>
+                        <h1>{data.name} </h1>
                         <p><span className='greyed'>Bonus: </span>{data.bonus}</p>
                         <p><span className='greyed'>Attendance: </span>{data.attendance}</p>
                         <p><span className='greyed'>Power Ranking: </span>{data.powerRanking}</p>
