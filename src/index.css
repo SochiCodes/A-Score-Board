@@ -90,11 +90,12 @@ section.filter-section{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 1s;
 }
 
 .view-wrapper:hover,
 .sort-wrapper:hover{
-  background-color: rgb(10, 10, 231, .15);
+  background-color: rgba(79, 79, 238, 0.5);
 }
 .filter-section .filter-icon{
   width: 20px;
@@ -165,7 +166,8 @@ thead tr td{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 30px;
 }
 .card-row .card{
   flex: 0 0 calc(33.3% - 20px);
@@ -183,7 +185,7 @@ thead tr td{
   font-size: 14px;
 }
 .card-row .card:hover{
-  border: 2px solid rgb(10, 10, 231, .15);
+  border: 2px solid rgba(79, 79, 238, 0.5);
 }
 .card .profile {
   display: flex;
